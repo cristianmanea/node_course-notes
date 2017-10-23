@@ -1,4 +1,4 @@
-body {
+ gbody {
   padding: 5px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -22,4 +22,4 @@ header.page-header .breadcrumb {
 
 header.page-header a.btn-primary {
     float: right;
-}
+} 
