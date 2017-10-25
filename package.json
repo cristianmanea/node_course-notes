@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "start-fs": "NOTES_MODEL=models/notes-fs node ./bin/www",
+    "sqlite3-setup": "sqlite3 chap07.sqlite3 --init models/schema-sqlite3.sql ",
     "postinstall": "bower install"
   },
   "dependencies": {
@@ -12,8 +14,13 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
+    "file-stream-rotator": "^0.2.0",
+    "fs-extra": "^4.0.2",
+    "leveldown": "^2.0.0",
+    "levelup": "^2.0.0",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "sqlite3": "^3.1.13"
   },
   "devDependencies": {
     "bower": "^1.8.2"
